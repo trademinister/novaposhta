@@ -1,0 +1,283 @@
+[
+  {
+    "id": "post_data",
+    "items": [
+      {
+        "type": "TextField",
+        "props": {
+          "placeholder": "",
+          "type": "text",
+          "name": "post_key"
+        }
+      }
+    ]
+  },
+  {
+    "id": "location",
+    "items": [
+      
+    ]
+  },
+  {
+    "id": "checkout",
+    "items": [
+      {
+        "type": "TextField",
+        "props": {
+          "name": "free_shipping_price",
+          "type": "number",
+          "placeholder": ""
+        }
+      },
+      {
+        "type": "Checkbox",
+        "props": {
+          "name": "has_free_shipping_price"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sender_data",
+    "items": [
+      {
+        "type": "Select",
+        "props": {
+          "name": "sender",
+          "options": []
+        }
+      },
+      {
+        "type": "Select",
+        "props": {
+          "name": "sender_contact",
+          "options": []
+        }
+      },
+      {
+        "type": "div",
+        "style": {
+          "display": "flex"
+        },
+        "items": [
+          {
+            "type": "div",
+            "style": {
+              "width": "100%",
+              "paddingRight": "1em"
+            },
+            "items": [
+              {
+                "type": "Select",
+                "props": {
+                  "name": "sender_city",
+                  "options": []
+                }
+              }
+            ]
+          },
+          {
+            "type": "div",
+            "style": {
+              "width": "100%"
+            },
+            "items": [
+              {
+                "type": "Select",
+                "props": {
+                  "placeholder": "",
+                  "type": "text",
+                  "name": "sender_address",
+                  "options": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Select",
+        "props": {
+          "placeholder": "",
+          "type": "text",
+          "name": "payment_method",
+          "options": [
+            {
+               "label":"Безналичный расчет",
+               "value":"NonCash"
+            },
+            {
+               "label":"Наличный расчет",
+               "value":"Cash"
+            }
+          ]
+        }
+      },
+      {
+        "type": "TextField",
+        "props": {
+          "placeholder": "",
+          "type": "phone",
+          "name": "senders_phone"
+        }
+      }
+    ]
+  },
+  {
+    "id": "default_data",
+    "items": [
+      {
+        "type": "Select",
+        "props": {
+          "placeholder": "",
+          "type": "text",
+          "name": "cargo_type",
+          "options": [
+            {
+              "label": "Вантаж",
+              "value": "Cargo"
+            },
+            {
+              "label": "Документи",
+              "value": "Documents"
+            },
+            {
+              "label": "Шини-диски",
+              "value": "TiresWheels"
+            },
+            {
+              "label": "Палети",
+              "value": "Pallet"
+            },
+            {
+              "label": "Посилка",
+              "value": "Parcel"
+            }
+          ]
+        }
+      },
+      {
+        "type": "Select",
+        "props": {
+          "name": "service_type",
+          "options": [
+            {
+              "label": "От двери до двери",
+              "value": "DoorsDoors"
+            },
+            {
+              "label": "От двери до склада",
+              "value": "DoorsWarehouse"
+            },
+            {
+              "label": "От склада до двери",
+              "value": "WarehouseDoors"
+            },
+            {
+              "label": "От склада до склада",
+              "value": "WarehouseWarehouse"
+            }
+          ]
+        }
+      },
+      {
+        "type": "TextField",
+        "props": {
+          "type": "number",
+          "placeholder": "",
+          "name": "weight"
+        }
+      },
+      {
+        "type": "TextField",
+        "props": {
+          "type": "number",
+          "placeholder": "",
+          "name": "price"
+        }
+      },
+      {
+        "type": "div",
+        "style": {
+          "display": "flex",
+          "justifyContent": "space-between"
+        },
+        "items": [
+          {
+            "type": "div",
+            "style": {
+              "width": "100%",
+              "paddingRight": "1em"
+            },
+            "items": [
+              {
+                "type": "TextField",
+                "props": {
+                  "placeholder": "",
+                  "type": "number",
+                  "name": "min_days"
+                }
+              }
+            ]
+          },
+          {
+            "type": "div",
+            "style": {
+              "width": "100%"
+            },
+            "items": [
+              {
+                "type": "TextField",
+                "props": {
+                  "placeholder": "",
+                  "type": "number",
+                  "name": "max_days"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TextField",
+        "props": {
+          "placeholder": "",
+          "type": "number",
+          "name": "max_parcel_points"
+        }
+      },
+      {
+        "type": "TextField",
+        "props": {
+          "placeholder": "",
+          "type": "number",
+          "name": "max_distance"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "props": {
+          "name": "DoorsDoors"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "props": {
+          "name": "DoorsWarehouse"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "props": {
+          "name": "WarehouseWarehouse"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "props": {
+          "name": "WarehouseDoors"
+        }
+      }
+    ]
+  }
+]

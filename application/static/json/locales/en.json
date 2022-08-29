@@ -1,0 +1,64 @@
+{
+  "blocks": {
+    "post_data": {
+      "title": "New Post API data",
+      "description": "New Post API data"
+    },
+    "default_data": {
+      "title": "Default data",
+      "description": "Set checkout default data"
+    },
+    "address_data": {
+      "title": "Address",
+      "description": "Set shipping address data"
+    },
+    "sender_data": {
+      "title": "Sender",
+      "description": "Sender data"
+    },
+    "checkout": {
+      "title": "Checkout",
+      "description": "Checkout page settings"
+    },
+    "location": {
+      "title": "Locations",
+      "description": "Locations settings"
+    }
+  },
+  "fields": {
+    "post_key": "New Post key",
+    "location": "city_sender",
+    "min_days": "Minimal delivery time (days)",
+    "max_days": "Maximum delivery time (days)",
+    "province": "Sender region",
+    "city": "Sender city",
+    "street": "Sender street",
+    "senders_phone": "Sender phone",
+    "sender": "Sender",
+    "sender_address": "Sender address",
+    "sender_city": "Sendert city",
+    "cargo_type": "Cargo type",
+    "payment_method": "Payment method",
+    "DoorsDoors": "Door to door delivery",
+    "DoorsWarehouse": "Door to warehouse delivery",
+    "WarehouseWarehouse": "Warehouse to warehouse delivery",
+    "WarehouseDoors": "Warehouse to door delivery",
+    "max_parcel_points": "Maximum parcel points",
+    "max_distance": "Maximum distance to parcel points",
+    "service_type": "Service type",
+    "price": "Default price",
+    "weight": "WEight",
+    "fio": "Contact person name",
+    "sender_contact": "Contact person",
+    "language": "Language",
+    "has_free_shipping_price": "Enable free shipping price",
+    "free_shipping_price": "Free shipping price"
+  },
+  "buttons": {
+    "save": "Save"
+  },
+  "banner": {
+    "success": "Success",
+    "error": "Error"
+  }
+}

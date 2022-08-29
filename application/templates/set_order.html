@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/css/uptown.css">
+  </head>
+  <body>
+    <main>
+
+      <div style="display: flex; justify-content: center;">
+        <div class="columns ten">
+          <section>
+            <div class="card" style="margin-top: 2em;">
+              <form action="" method="post">
+                <div class="columns ten">
+                  <select id="serviceType" class="" name="service_type">
+                    {% for service in service_types %}
+                      <option {% if service == service_type %} selected {% endif %} value="{{service.Ref}}" data-code="">{{service.Description}}</option>
+                    {% endfor %}
+
+                    {% for point in parcel_points %}
+                      <option {% if parcel_point == point.Ref %} selected {% endif %} value="WarehouseWarehouse" data-code="{{point.Ref}}">{{point.Description}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+
+                <div class="columns two">
+                  <input id="parcelPoint" type="hidden" name="parcel_point" value="{% if parcel_point %}{{parcel_point}}{% endif %}">
+
+                  <button type="submit" name="button">Submit</button>
+                </div>
+
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        this.getElementById('serviceType').addEventListener('change', event => {
+          const OPTIONS = event.target.getElementsByTagName('option');
+
+          let option;
+
+          for (const OPTION of OPTIONS) {
+            if (OPTION.selected) {
+              option = OPTION;
+              break;
+            }
+          }
+
+          this.getElementById('parcelPoint').value = option.getAttribute('data-code');
+
+        });
+      });
+    </script>
+
+  </body>
+</html>
